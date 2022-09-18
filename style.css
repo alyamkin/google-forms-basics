@@ -1,0 +1,17 @@
+button {
+  margin-top: 1rem;
+}
+
+.validation-message {
+  display: block;
+  padding-top: 0.4em;
+  color: red;
+}
+
+label {
+  font-size: 1.3em;
+}
+
+/* input:invalid {
+  border: 2px solid red;
+} */
