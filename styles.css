@@ -1,0 +1,17 @@
+button {
+  margin-top: 1rem;
+}
+
+input {
+  border: 1px solid;
+  border-inline-start-width: 4px;
+}
+
+button {
+  margin-top: 1rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
