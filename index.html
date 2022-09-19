@@ -4,7 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forms Basics</title>
+    <title>Accessibility</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <div class="wrapper">
+        <form action="#">
+          <div>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              minlength="8"
+              required
+              aria-describedby="name-validation"
+            />
+            <span id="name-validation"
+              >Pleae use at least eight characters</span
+            >
+          </div>
+          <div class="looks-like-label" for="name1">Name</div>
+          <div id="name1" class="looks-like-input" contenteditable></div>
+          <button>Save</button>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
