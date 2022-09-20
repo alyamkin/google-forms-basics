@@ -4,7 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Forms Basics</title>
+    <title>Security and privacy</title>
+    <style>
+      button {
+        margin-top: 1rem;
+      }
+
+      label {
+        display: block;
+        margin-top: 1rem;
+      }
+
+      .honeypot {
+        display: none;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <div class="wrapper">
+        <form action="#">
+          <label for="honeypot" class="honeypot" aria-hidden="true" hidden
+            >Keep this field blank</label
+          >
+          <input
+            type="text"
+            class="honeypot"
+            id="honeypot"
+            autocomplete="off"
+            aria-hidden="true"
+            hidden
+            tabindex="-1"
+          />
+          <div>
+            <label for="email">Email</label>
+            <input
+              autocomplete="email"
+              required
+              type="email"
+              id="email"
+              name="email"
+            />
+          </div>
+          <div>
+            <label for="password">Password</label>
+            <input
+              autocomplete="new-password"
+              type="password"
+              id="password"
+              name="password"
+            />
+          </div>
+          <button>Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
